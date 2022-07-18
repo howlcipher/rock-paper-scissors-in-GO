@@ -66,15 +66,15 @@ func randomChoice() string {
 }
 
 // decide who the winner is
-func pickWinner(user_choice string, computer_choice string) {
+func pickWinner(userChoice string, computerChoice string) {
 
-	if user_choice == "Rock" && computer_choice == "Scissors" {
+	if userChoice == "Rock" && computerChoice == "Scissors" {
 		fmt.Println("User wins!")
-	} else if user_choice == "Paper" && computer_choice == "Rock" {
+	} else if userChoice == "Paper" && computerChoice == "Rock" {
 		fmt.Println("User wins!")
-	} else if user_choice == "Scissors" && computer_choice == "Paper" {
+	} else if userChoice == "Scissors" && computerChoice == "Paper" {
 		fmt.Println("User wins!")
-	} else if user_choice == computer_choice {
+	} else if userChoice == computerChoice {
 		fmt.Println("Draw!")
 	} else {
 		fmt.Println("Computer wins!")
