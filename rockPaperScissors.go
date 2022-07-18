@@ -12,11 +12,9 @@ var choices = [3]string{"Rock", "Paper", "Scissors"}
 //main
 func main() {
 	fmt.Println("Welcome to Rock Paper Scissors")
-	//choice()
-	fmt.Println(randomChoice())
-	var userChoice string = choice()
-	var computerChoice string = randomChoice()
-	pickWinner(userChoice, computerChoice)
+	var userChoice string = choice()           //choice of the user
+	var computerChoice string = randomChoice() // choice of the computer
+	pickWinner(userChoice, computerChoice)     // winnder is chosen
 }
 
 //list all choice in cli
