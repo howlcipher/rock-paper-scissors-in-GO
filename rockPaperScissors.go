@@ -59,6 +59,7 @@ func printChoice(choice string, user string) {
 	fmt.Println(user, "choice is...", choice)
 }
 
+//random choice
 func randomChoice() string {
 	rand.Seed(time.Now().UnixNano())
 	var random int = rand.Intn(3)
